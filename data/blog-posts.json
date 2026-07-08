@@ -10,6 +10,17 @@
       "fecha": "2026-07-08",
       "categoria": "PC & Laptop",
       "autor": "GoSmArtic Team"
+    },
+    {
+      "id": 2,
+      "slug": "google-pixel-11-data-presentazione-ufficiale",
+      "titulo": "Google Pixel 11: è ufficiale la data di presentazione",
+      "resumen": "Google ha confermato che il nuovo Made by Google si terrà il 12 agosto 2026 a New York. Ecco cosa sappiamo per certo e cosa resta ancora voce di corridoio.",
+      "contenido_html": "<p>Dopo settimane di indiscrezioni, Google ha finalmente confermato la data del suo prossimo evento hardware: <strong>Made by Google 2026</strong> si terrà mercoledì <strong>12 agosto 2026 a New York</strong>, con inizio alle 18:00 ora locale (mezzanotte tra il 12 e il 13 agosto in Italia). L'annuncio è arrivato tramite gli inviti stampa ufficiali inviati alle principali testate internazionali.</p><h2>Cosa è confermato</h2><p>Al momento, Google ha ufficializzato solo data e luogo dell'evento, senza anticipare dettagli tecnici sui dispositivi. Secondo le indiscrezioni più insistenti, sul palco dovrebbero debuttare quattro nuovi smartphone: <strong>Pixel 11</strong>, <strong>Pixel 11 Pro</strong>, <strong>Pixel 11 Pro XL</strong> e <strong>Pixel 11 Pro Fold</strong>, accompagnati dal nuovo <strong>Pixel Watch 5</strong>, atteso ancora una volta in due misure.</p><h2>Cosa resta da confermare</h2><p>Diverse voci di corridoio circolano da settimane, ma vanno prese con cautela fino alla presentazione ufficiale:</p><ul><li>Una possibile eliminazione del taglio di memoria da 128GB, con 256GB come nuovo punto di partenza per l'intera gamma</li><li>Un aumento di prezzo legato ai rincari globali dei componenti di memoria RAM</li><li>Una nuova funzione chiamata \"Pixel Glow\", un sistema di illuminazione LED per le notifiche, di cui però non esistono ancora dettagli ufficiali</li><li>Design con cornici più sottili e barra fotocamere rinnovata</li></ul><h2>Quando arriveranno nei negozi</h2><p>Se Google seguirà lo schema degli anni scorsi, i preordini potrebbero aprirsi lo stesso giorno della presentazione, con la disponibilità nei negozi indicativamente intorno al 20 agosto 2026. Come sempre, però, solo l'evento ufficiale del 12 agosto potrà confermare tempistiche precise, prezzi definitivi e specifiche tecniche complete.</p><p>Su GoSmArtic seguiremo l'evento e aggiorneremo questo spazio non appena Google svelerà ufficialmente la nuova gamma Pixel 11.</p>",
+      "imagenUrl": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=800&q=80",
+      "fecha": "2026-07-08",
+      "categoria": "Telefoni",
+      "autor": "GoSmArtic Team"
     }
   ],
   "_last_updated": "2026-07-08T00:00:00.000Z"
