@@ -15,17 +15,16 @@ async function fetchProductData(asin) {
 }
 
 function extractPricing(product) {
-  const bb = product?.buybox_winner || {};
-  const current = bb?.price?.extracted_price ?? product?.price?.extracted_price ?? null;
-  const original = bb?.rrp?.extracted_price ?? bb?.list_price?.extracted_price ?? null;
+  const current = product?.extracted_price ?? null;
+  const original = product?.extracted_old_price ?? null;
   return { current, original };
 }
 
 function extractImage(product) {
-  // SerpApi suele devolver "images" (array) o "main_image"; probamos ambas rutas
-  if (product?.main_image?.link) return product.main_image.link;
-  if (Array.isArray(product?.images) && product.images.length > 0) {
-    return product.images[0].link || product.images[0];
+  // El campo real es "thumbnails" (array de fotos del producto).
+  // "thumbnail" (singular) a veces es solo un ícono de Prime, así que lo evitamos.
+  if (Array.isArray(product?.thumbnails) && product.thumbnails.length > 0) {
+    return product.thumbnails[0];
   }
   return null;
 }
@@ -35,6 +34,41 @@ async function main() {
   const offers = {};
 
   for (const item of catalogo) {
+    try {
+      const product = await fetchProductData(item.asin);
+      if (!product) { console.log(`ID ${item.id}: sin datos de producto`); continue; }
+
+      const { current, original } = extractPricing(product);
+      const imageUrl = extractImage(product);
+
+      let isOnSale = false;
+      let discountPct = 0;
+
+      if (current && original && original > current) {
+        discountPct = Math.round(((original - current) / original) * 100);
+        isOnSale = discountPct >= UMBRAL_DESCUENTO;
+      }
+
+      offers[item.id] = {
+        is_on_sale: isOnSale,
+        discount_percentage: discountPct,
+        image_url: imageUrl,
+        last_checked_at: new Date().toISOString()
+      };
+
+      console.log(`ID ${item.id}: ${isOnSale ? `OFERTA -${discountPct}%` : 'sin oferta'} | imagen: ${imageUrl ? 'sí' : 'no'}`);
+      await new Promise(r => setTimeout(r, 800));
+    } catch (err) {
+      console.error(`Error con ID ${item.id} (${item.asin}):`, err.message);
+    }
+  }
+
+  offers._last_updated = new Date().toISOString();
+  fs.writeFileSync(OFFERS_PATH, JSON.stringify(offers, null, 2));
+  console.log('offers.json actualizado.');
+}
+
+main().catch(err => { console.error(err); process.exit(1); });  for (const item of catalogo) {
     try {
       const product = await fetchProductData(item.asin);
       if (!product) { console.log(`ID ${item.id}: sin datos de producto`); continue; }
