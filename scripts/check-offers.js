@@ -4,6 +4,7 @@ const API_KEY = process.env.SERPAPI_KEY;
 const CATALOGO_PATH = path.join(__dirname, '../data/catalogo.json');
 const OFFERS_PATH = path.join(__dirname, '../data/offers.json');
 const UMBRAL_DESCUENTO = 15;
+const MAX_DESCUENTO_CONFIABLE = 50; // por encima de esto, se descarta por sospechoso
 
 async function fetchProductData(asin) {
   const url = `https://serpapi.com/search.json?engine=amazon_product&asin=${asin}&amazon_domain=amazon.it&api_key=${API_KEY}`;
@@ -13,10 +14,19 @@ async function fetchProductData(asin) {
   return data.product_results || null;
 }
 
-function extractPricing(product) {
+function extractDiscountPct(product) {
+  // Prioridad 1: el campo "discount" que Amazon muestra directamente en la página (ej. "-22%")
+  if (product?.discount) {
+    const match = String(product.discount).match(/(\d+)/);
+    if (match) return parseInt(match[1], 10);
+  }
+  // Prioridad 2 (respaldo): calcularlo nosotros si no viene el campo anterior
   const current = product?.extracted_price ?? null;
   const original = product?.extracted_old_price ?? null;
-  return { current, original };
+  if (current && original && original > current) {
+    return Math.round(((original - current) / original) * 100);
+  }
+  return 0;
 }
 
 function extractImage(product) {
@@ -34,21 +44,28 @@ async function main() {
     try {
       const product = await fetchProductData(item.asin);
       if (!product) { console.log(`ID ${item.id}: sin datos de producto`); continue; }
-      const { current, original } = extractPricing(product);
+
+      const discountPct = extractDiscountPct(product);
       const imageUrl = extractImage(product);
+
       let isOnSale = false;
-      let discountPct = 0;
-      if (current && original && original > current) {
-        discountPct = Math.round(((original - current) / original) * 100);
-        isOnSale = discountPct >= UMBRAL_DESCUENTO;
+      let estado = 'sin oferta';
+
+      if (discountPct > MAX_DESCUENTO_CONFIABLE) {
+        estado = `descartado (${discountPct}% sospechoso)`;
+      } else if (discountPct >= UMBRAL_DESCUENTO) {
+        isOnSale = true;
+        estado = `OFERTA -${discountPct}%`;
       }
+
       offers[item.id] = {
         is_on_sale: isOnSale,
-        discount_percentage: discountPct,
+        discount_percentage: isOnSale ? discountPct : 0,
         image_url: imageUrl,
         last_checked_at: new Date().toISOString()
       };
-      console.log(`ID ${item.id}: ${isOnSale ? `OFERTA -${discountPct}%` : 'sin oferta'} | imagen: ${imageUrl ? 'sí' : 'no'}`);
+
+      console.log(`ID ${item.id}: ${estado} | imagen: ${imageUrl ? 'sí' : 'no'}`);
       await new Promise(r => setTimeout(r, 800));
     } catch (err) {
       console.error(`Error con ID ${item.id} (${item.asin}):`, err.message);
