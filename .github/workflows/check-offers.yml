@@ -27,3 +27,6 @@ jobs:
           git add data/offers.json
           git diff --staged --quiet || git commit -m "chore: update offers data [skip ci]"
           git push
+       - name: Purge jsDelivr cache
+        run: |
+          curl -s "https://purge.jsdelivr.net/gh/Villajr130/gosmartic-offers@main/data/offers.json"
