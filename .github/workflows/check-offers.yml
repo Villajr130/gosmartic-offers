@@ -2,7 +2,7 @@ name: Check Amazon Offers
 
 on:
   schedule:
-    - cron: '0 6,18 * * *'
+    - cron: '17 6 * * *'
   workflow_dispatch:
 
 permissions:
