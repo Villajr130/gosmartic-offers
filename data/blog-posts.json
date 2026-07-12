@@ -54,17 +54,6 @@
       "fecha": "2026-07-09",
       "categoria": "Accessori Tech",
       "autor": "GoSmArtic Team"
-    },
-    {
-      "id": 997,
-      "slug": "test-target-channel",
-      "titulo": "Test subscription ID diretto",
-      "resumen": "Verifica invio push tramite subscription ID diretto.",
-      "contenido_html": "<p>Test finale.</p>",
-      "imagenUrl": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=800&q=80",
-      "fecha": "2026-07-12",
-      "categoria": "Accessori Tech",
-      "autor": "GoSmArtic Team"
     }
   ],
   "_last_updated": "2026-07-12T18:45:00.000Z"
