@@ -35,10 +35,10 @@ jobs:
         run: |
           TITLE=$(node -pe "JSON.parse(require('fs').readFileSync('new-post.json')).titulo")
           SLUG=$(node -pe "JSON.parse(require('fs').readFileSync('new-post.json')).slug")
-          curl -s -X POST https://onesignal.com/api/v1/notifications \
-            -H "Authorization: Basic ${{ secrets.ONESIGNAL_REST_API_KEY }}" \
+          curl -s -X POST https://api.onesignal.com/notifications \
+            -H "Authorization: Key ${{ secrets.ONESIGNAL_REST_API_KEY }}" \
             -H "Content-Type: application/json" \
-            -d "{\"app_id\":\"${{ secrets.ONESIGNAL_APP_ID }}\",\"include_subscription_ids\":[\"${{ secrets.ONESIGNAL_TEST_SUBSCRIPTION_ID }}\"],\"headings\":{\"it\":\"Nuovo articolo su GoSmArtic\"},\"contents\":{\"it\":\"$TITLE\"},\"url\":\"https://gosmartic.com/#blog/$SLUG\"}"
+            -d "{\"app_id\":\"${{ secrets.ONESIGNAL_APP_ID }}\",\"included_segments\":[\"Subscribed Users\"],\"headings\":{\"it\":\"Nuovo articolo su GoSmArtic\"},\"contents\":{\"it\":\"$TITLE\"},\"url\":\"https://gosmartic.com/#blog/$SLUG\"}"
       - name: Send Buttondown email
         if: steps.detect.outputs.has_new == 'true'
         run: |
