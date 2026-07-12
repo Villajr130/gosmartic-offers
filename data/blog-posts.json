@@ -54,29 +54,7 @@
       "fecha": "2026-07-09",
       "categoria": "Accessori Tech",
       "autor": "GoSmArtic Team"
-    },
-    {
-      "id": 999,
-      "slug": "articolo-di-prova-notifiche",
-      "titulo": "Articolo di prova - notifiche",
-      "resumen": "Questo è 1 articolo di prova per verificare l'invio automatico di notifiche push ed email.",
-      "contenido_html": "<p>Questo articolo è solo un test e verrà rimosso a breve.</p>",
-      "imagenUrl": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=800&q=80",
-      "fecha": "2026-07-12",
-      "categoria": "Accessori Tech",
-      "autor": "GoSmArtic Team"
-    },
-    {
-      "id": 1000,
-      "slug": "articolo-di-prova-notifiche-2",
-      "titulo": "Secondo articolo di prova - notifiche",
-      "resumen": "Test finale per confermare invio push ed email.",
-      "contenido_html": "<p>Test finale.</p>",
-      "imagenUrl": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=800&q=80",
-      "fecha": "2026-07-12",
-      "categoria": "Accessori Tech",
-      "autor": "GoSmArtic Team"
     }
   ],
-  "_last_updated": "2026-07-12T18:35:00.000Z"
+  "_last_updated": "2026-07-12T18:45:00.000Z"
 }
