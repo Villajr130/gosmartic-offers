@@ -54,7 +54,18 @@
       "fecha": "2026-07-09",
       "categoria": "Accessori Tech",
       "autor": "GoSmArtic Team"
+    },
+    {
+      "id": 6,
+      "slug": "come-scegliere-uno-smartphone-guida-completa",
+      "titulo": "Come scegliere uno smartphone: guida completa all'acquisto",
+      "resumen": "Processore, fotocamera, batteria e sistema operativo: ecco come orientarsi tra le decine di modelli disponibili senza pagare per specifiche che non userai mai.",
+      "contenido_html": "<p>Con decine di nuovi modelli che escono ogni anno, scegliere lo smartphone giusto può sembrare complicato quanto scegliere un laptop. Ecco i criteri principali da considerare, in ordine di importanza pratica.</p><h2>1. iOS o Android: la scelta dell'ecosistema</h2><p>Prima ancora delle specifiche tecniche, la decisione più importante è l'ecosistema. iOS (Apple) offre maggiore integrazione tra dispositivi e aggiornamenti software garantiti più a lungo. Android offre più scelta tra produttori e fasce di prezzo, oltre a maggiore personalizzazione. Se hai già altri dispositivi di un ecosistema (un Mac, un iPad, oppure servizi Google), spesso conviene restare coerente per sfruttare l'integrazione.</p><h2>2. Fotocamera: più contano l'elaborazione che i megapixel</h2><p>Il numero di megapixel da solo dice poco sulla qualità reale delle foto. Contano molto di più l'elaborazione software (fotografia computazionale), la dimensione del sensore e la qualità dell'obiettivo. Prima di scegliere in base alla fotocamera, cerca sempre recensioni con foto di esempio scattate in condizioni di scarsa luminosità, dove le differenze tra modelli si notano di più.</p><h2>3. Autonomia della batteria</h2><p>La capacità della batteria (mAh) non è direttamente comparabile tra modelli diversi, perché l'efficienza del processore e dello schermo influisce molto sul consumo reale. Cerca sempre test di autonomia indipendenti che misurino ore di utilizzo effettivo, non solo la capacità dichiarata.</p><h2>4. Display: dimensione e refresh rate</h2><p>Uno schermo con refresh rate a 120Hz rende la scrolling e le animazioni molto più fluide rispetto ai classici 60Hz, con una differenza percepibile fin dai primi minuti di utilizzo. Per la dimensione, considera come userai il telefono: schermi grandi (oltre 6,5'') sono ottimi per video e produttività, ma meno comodi per un uso a una mano.</p><h2>5. Durata degli aggiornamenti software</h2><p>Un fattore spesso sottovalutato: verifica per quanti anni il produttore garantisce aggiornamenti software e di sicurezza. Un telefono con 5-6 anni di supporto garantito mantiene il suo valore e la sua sicurezza molto più a lungo di uno con solo 2-3 anni, anche se il prezzo iniziale è simile.</p><h2>Conclusione</h2><p>Come per i laptop, non esiste lo smartphone perfetto per tutti: la scelta migliore dipende dal tuo utilizzo reale, dal budget disponibile e dall'ecosistema che già usi. Su GoSmArtic selezioniamo periodicamente i modelli più interessanti disponibili su Amazon nelle diverse fasce di prezzo.</p>",
+      "imagenUrl": "https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=800&q=80",
+      "fecha": "2026-07-12",
+      "categoria": "Telefoni",
+      "autor": "GoSmArtic Team"
     }
   ],
-  "_last_updated": "2026-07-12T20:55:00.000Z"
+  "_last_updated": "2026-07-12T21:07:00.000Z"
 }
