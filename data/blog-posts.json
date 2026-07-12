@@ -56,8 +56,8 @@
       "autor": "GoSmArtic Team"
     },
     {
-      "id": 999,
-      "slug": "test-finale-invio-notifiche",
+      "id": 998,
+      "slug": "test-definitivo-v4",
       "titulo": "Test finale invio notifiche",
       "resumen": "Verifica definitiva dell'invio automatico push ed email.",
       "contenido_html": "<p>Test finale, verrà rimosso subito dopo la verifica.</p>",
