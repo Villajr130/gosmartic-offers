@@ -13,13 +13,19 @@ jobs:
         with:
           fetch-depth: 2
 
-      - name: Detect new post
+- name: Detect new post
         id: detect
         run: |
           git show HEAD~1:data/blog-posts.json > old.json 2>/dev/null || echo '{"posts":[]}' > old.json
           node -e "
             const fs = require('fs');
-            const oldData = JSON.parse(fs.readFileSync('old.json'));
+            let oldData;
+            try {
+              oldData = JSON.parse(fs.readFileSync('old.json'));
+            } catch (e) {
+              console.log('Version anterior no es JSON valido, tratando como vacia.');
+              oldData = { posts: [] };
+            }
             const newData = JSON.parse(fs.readFileSync('data/blog-posts.json'));
             const oldSlugs = new Set(oldData.posts.map(p => p.slug));
             const nuevos = newData.posts.filter(p => !oldSlugs.has(p.slug));
