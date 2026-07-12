@@ -65,10 +65,7 @@
       "fecha": "2026-07-12",
       "categoria": "Accessori Tech",
       "autor": "GoSmArtic Team"
-    }
-  ],
-  "_last_updated": "2026-07-12T18:30:00.000Z"
-},
+    },
     {
       "id": 1000,
       "slug": "articolo-di-prova-notifiche-2",
@@ -80,3 +77,6 @@
       "categoria": "Accessori Tech",
       "autor": "GoSmArtic Team"
     }
+  ],
+  "_last_updated": "2026-07-12T18:35:00.000Z"
+}
