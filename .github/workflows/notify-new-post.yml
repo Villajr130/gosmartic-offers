@@ -42,3 +42,6 @@ jobs:
             -H "Content-Type: application/json" \
             -H "X-Buttondown-Live-Dangerously: true" \
             -d "{\"subject\":\"Nuovo articolo: $TITLE\",\"body\":\"$RESUMEN\n\nLeggi tutto: https://gosmartic.com/#blog/$SLUG\",\"status\":\"about_to_send\"}"
+      - name: Purge jsDelivr cache
+        run: |
+          curl -s "https://purge.jsdelivr.net/gh/Villajr130/gosmartic-offers@main/data/blog-posts.json"
