@@ -48,4 +48,4 @@ jobs:
           curl -s -X POST https://api.buttondown.email/v1/emails \
             -H "Authorization: Token ${{ secrets.BUTTONDOWN_API_KEY }}" \
             -H "Content-Type: application/json" \
-            -d "{\"subject\":\"Nuovo articolo: $TITLE\",\"body\":\"$RESUMEN\n\nLeggi tutto: https://gosmartic.com/#blog/$SLUG\"}"
+            -d "{\"subject\":\"Nuovo articolo: $TITLE\",\"body\":\"$RESUMEN\n\nLeggi tutto: https://gosmartic.com/#blog/$SLUG\",\"status\":\"about_to_send\"}"
