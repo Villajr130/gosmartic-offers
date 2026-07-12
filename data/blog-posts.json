@@ -57,7 +57,7 @@
     },
     {
       "id": 997,
-      "slug": "test-auth-corregida",
+      "slug": "test-target-channel",
       "titulo": "Test subscription ID diretto",
       "resumen": "Verifica invio push tramite subscription ID diretto.",
       "contenido_html": "<p>Test finale.</p>",
