@@ -54,17 +54,6 @@
       "fecha": "2026-07-09",
       "categoria": "Accessori Tech",
       "autor": "GoSmArtic Team"
-    },
-    {
-      "id": 999,
-      "slug": "test-final-notifiche",
-      "titulo": "Test finale notifiche",
-      "resumen": "Verifica finale dell'invio automatico.",
-      "contenido_html": "<p>Test finale, verrà rimosso subito dopo la verifica.</p>",
-      "imagenUrl": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=800&q=80",
-      "fecha": "2026-07-12",
-      "categoria": "Accessori Tech",
-      "autor": "GoSmArtic Team"
     }
   ],
   "_last_updated": "2026-07-12T18:45:00.000Z"
