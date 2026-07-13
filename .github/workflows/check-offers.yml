@@ -27,3 +27,4 @@ jobs:
       - name: Purge jsDelivr cache
         run: |
           curl -s "https://purge.jsdelivr.net/gh/Villajr130/gosmartic-offers@main/data/offers.json"
+# probado con Claude Code
