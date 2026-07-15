@@ -3,7 +3,6 @@ const path = require('path');
 const API_KEY = process.env.SERPAPI_KEY;
 const CATALOGO_PATH = path.join(__dirname, '../data/catalogo.json');
 const OFFERS_PATH = path.join(__dirname, '../data/offers.json');
-const UMBRAL_DESCUENTO = 15;
 const MAX_DESCUENTO_CONFIABLE = 50; // por encima de esto, se descarta por sospechoso
 
 function readJson(filePath, fallback) {
@@ -68,7 +67,7 @@ async function main() {
 
       if (discountPct > MAX_DESCUENTO_CONFIABLE) {
         estado = `descartado (${discountPct}% sospechoso)`;
-      } else if (discountPct >= UMBRAL_DESCUENTO) {
+      } else if (discountPct > 0) {
         isOnSale = true;
         estado = `OFERTA -${discountPct}%`;
       }
