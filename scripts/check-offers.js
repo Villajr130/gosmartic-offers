@@ -3,10 +3,8 @@ const path = require('path');
 const API_KEY = process.env.SERPAPI_KEY;
 const CATALOGO_PATH = path.join(__dirname, '../data/catalogo.json');
 const OFFERS_PATH = path.join(__dirname, '../data/offers.json');
-const LAST_CHECKED_PATH = path.join(__dirname, '../data/last-checked.json');
 const UMBRAL_DESCUENTO = 15;
 const MAX_DESCUENTO_CONFIABLE = 50; // por encima de esto, se descarta por sospechoso
-const WEEKLY_INTERVAL_DAYS = 7;
 
 function readJson(filePath, fallback) {
   try {
@@ -14,14 +12,6 @@ function readJson(filePath, fallback) {
   } catch {
     return fallback;
   }
-}
-
-function shouldCheckToday(item, lastChecked) {
-  if (item.frecuencia !== 'weekly') return true;
-  const last = lastChecked[item.id];
-  if (!last) return true;
-  const daysSince = (Date.now() - new Date(last).getTime()) / (1000 * 60 * 60 * 24);
-  return daysSince >= WEEKLY_INTERVAL_DAYS;
 }
 
 async function fetchProductData(asin) {
@@ -57,25 +47,16 @@ function extractImage(product) {
 async function main() {
   const catalogo = JSON.parse(fs.readFileSync(CATALOGO_PATH, 'utf-8'));
   const offers = readJson(OFFERS_PATH, {});
-  const lastChecked = readJson(LAST_CHECKED_PATH, {});
 
   let consultados = 0;
-  let omitidos = 0;
 
   for (const item of catalogo) {
-    if (!shouldCheckToday(item, lastChecked)) {
-      omitidos++;
-      console.log(`ID ${item.id}: omitido (frecuencia ${item.frecuencia}, aún no toca)`);
-      continue;
-    }
-
     try {
       const product = await fetchProductData(item.asin);
       consultados++;
 
       if (!product) {
         console.log(`ID ${item.id}: sin datos de producto`);
-        if (item.frecuencia === 'weekly') lastChecked[item.id] = new Date().toISOString();
         continue;
       }
 
@@ -99,8 +80,6 @@ async function main() {
         last_checked_at: new Date().toISOString()
       };
 
-      if (item.frecuencia === 'weekly') lastChecked[item.id] = new Date().toISOString();
-
       console.log(`ID ${item.id}: ${estado} | imagen: ${imageUrl ? 'sí' : 'no'}`);
       await new Promise(r => setTimeout(r, 800));
     } catch (err) {
@@ -110,10 +89,9 @@ async function main() {
 
   offers._last_updated = new Date().toISOString();
   fs.writeFileSync(OFFERS_PATH, JSON.stringify(offers, null, 2));
-  fs.writeFileSync(LAST_CHECKED_PATH, JSON.stringify(lastChecked, null, 2));
 
   console.log('offers.json actualizado.');
-  console.log(`Resumen: ${consultados} productos consultados hoy, ${omitidos} omitidos | búsquedas SerpApi consumidas: ${consultados}`);
+  console.log(`Resumen: ${consultados} productos consultados | búsquedas SerpApi consumidas: ${consultados}`);
 }
 
 main().catch(err => { console.error(err); process.exit(1); });
