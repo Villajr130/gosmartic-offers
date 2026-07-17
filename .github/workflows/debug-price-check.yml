@@ -1,0 +1,23 @@
+name: Debug Price Check (temporal)
+on:
+  workflow_dispatch:
+    inputs:
+      asins:
+        description: 'ASINs a consultar en SerpApi, separados por coma (ej. B0GQRWYXXG,B0GQZ33PG3)'
+        required: true
+        type: string
+permissions:
+  contents: read
+jobs:
+  debug-price-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Consultar SerpApi y volcar el payload crudo al log
+        env:
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+          ASINS: ${{ github.event.inputs.asins }}
+        run: node scripts/debug-price-check.js
