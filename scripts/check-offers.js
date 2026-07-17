@@ -18,16 +18,28 @@ async function fetchProductData(asin) {
   const res = await fetch(url);
   if (!res.ok) throw new Error(`SerpApi error ${res.status} para ASIN ${asin}`);
   const data = await res.json();
-  return data.product_results || null;
+  return data;
 }
 
-function extractDiscountPct(product) {
-  // Prioridad 1: el campo "discount" que Amazon muestra directamente en la página (ej. "-22%")
-  if (product?.discount) {
-    const match = String(product.discount).match(/(\d+)/);
-    if (match) return parseInt(match[1], 10);
-  }
-  // Prioridad 2 (respaldo): calcularlo nosotros si no viene el campo anterior
+// SerpApi solo agrega el campo "discount" (string tipo "-X%") cuando detectó
+// un badge de rebaja real en la página. Si "old_price"/"extracted_old_price"
+// aparece sin ese campo, suele venir de otro módulo de la página (ej. la
+// valutazione de trade-in "Rivendi e risparmia") y no de un descuento genuino.
+function getConfirmedDiscountField(data) {
+  return data?.product_results?.discount || data?.purchase_options?.single_offer?.discount || null;
+}
+
+function extractDiscountPct(data) {
+  const discountField = getConfirmedDiscountField(data);
+  if (!discountField) return 0;
+
+  // Prioridad 1: el porcentaje que Amazon muestra directamente en la página (ej. "-22%")
+  const match = String(discountField).match(/(\d+)/);
+  if (match) return parseInt(match[1], 10);
+
+  // Prioridad 2 (respaldo): calcularlo nosotros, solo porque ya confirmamos
+  // arriba que hay un badge de descuento real acompañando al precio anterior.
+  const product = data?.product_results;
   const current = product?.extracted_price ?? null;
   const original = product?.extracted_old_price ?? null;
   if (current && original && original > current) {
@@ -51,15 +63,16 @@ async function main() {
 
   for (const item of catalogo) {
     try {
-      const product = await fetchProductData(item.asin);
+      const data = await fetchProductData(item.asin);
       consultados++;
 
+      const product = data?.product_results;
       if (!product) {
         console.log(`ID ${item.id}: sin datos de producto`);
         continue;
       }
 
-      const discountPct = extractDiscountPct(product);
+      const discountPct = extractDiscountPct(data);
       const imageUrl = extractImage(product);
 
       let isOnSale = false;
@@ -93,4 +106,8 @@ async function main() {
   console.log(`Resumen: ${consultados} productos consultados | búsquedas SerpApi consumidas: ${consultados}`);
 }
 
-main().catch(err => { console.error(err); process.exit(1); });
+if (require.main === module) {
+  main().catch(err => { console.error(err); process.exit(1); });
+}
+
+module.exports = { getConfirmedDiscountField, extractDiscountPct };
