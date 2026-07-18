@@ -41,7 +41,14 @@ jobs:
             -H "Authorization: Token ${{ secrets.BUTTONDOWN_API_KEY }}" \
             -H "Content-Type: application/json" \
             -H "X-Buttondown-Live-Dangerously: true" \
-            -d "{\"subject\":\"Nuovo articolo: $TITLE\",\"body\":\"$RESUMEN\n\nLeggi tutto: https://gosmartic.com/#blog/$SLUG\",\"status\":\"about_to_send\"}"
+            -d "{\"subject\":\"Nuovo articolo: $TITLE\",\"body\":\"$RESUMEN\n\nLeggi tutto: https://gosmartic.com/blog/$SLUG/\",\"status\":\"about_to_send\"}"
       - name: Purge jsDelivr cache
         run: |
           curl -s "https://purge.jsdelivr.net/gh/Villajr130/gosmartic-offers@main/data/blog-posts.json"
+      - name: Trigger gosmartic-web regeneration
+        run: |
+          curl -s -X POST \
+            -H "Authorization: token ${{ secrets.GOSMARTIC_WEB_DISPATCH_PAT }}" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/Villajr130/gosmartic-web/dispatches \
+            -d '{"event_type":"blog-post-published"}'
