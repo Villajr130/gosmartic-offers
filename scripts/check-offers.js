@@ -21,12 +21,24 @@ async function fetchProductData(asin) {
   return data;
 }
 
-// SerpApi solo agrega el campo "discount" (string tipo "-X%") cuando detectó
-// un badge de rebaja real en la página. Si "old_price"/"extracted_old_price"
-// aparece sin ese campo, suele venir de otro módulo de la página (ej. la
-// valutazione de trade-in "Rivendi e risparmia") y no de un descuento genuino.
+// SerpApi puede poblar "discount" (string tipo "-X%") desde módulos ajenos al
+// precio de venta (ej. el trade-in "Rivendi e risparmia", cupones cruzados o
+// descuentos de bundle) sin que exista un "old_price" real detrás. Por eso no
+// basta con que "discount" esté presente: solo se confía en él si, en el MISMO
+// bloque (product_results o purchase_options.single_offer), también aparece
+// "old_price"/"extracted_old_price" respaldándolo.
 function getConfirmedDiscountField(data) {
-  return data?.product_results?.discount || data?.purchase_options?.single_offer?.discount || null;
+  const product = data?.product_results;
+  if (product?.discount && (product?.old_price || product?.extracted_old_price)) {
+    return product.discount;
+  }
+
+  const singleOffer = data?.purchase_options?.single_offer;
+  if (singleOffer?.discount && (singleOffer?.old_price || singleOffer?.extracted_old_price)) {
+    return singleOffer.discount;
+  }
+
+  return null;
 }
 
 function extractDiscountPct(data) {
