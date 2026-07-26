@@ -120,17 +120,6 @@
       "fecha": "2026-07-22",
       "categoria": "Accessori Tech",
       "autor": "GoSmArtic Team"
-    },
-    {
-      "id": 1001,
-      "slug": "test-onesignal-lang-fix",
-      "titulo": "Articolo di prova per test OneSignal",
-      "resumen": "Articolo di prova per verificare l'invio push OneSignal dopo la correzione dell'endpoint e dell'autenticazione.",
-      "contenido_html": "<p>Articolo di prova.</p>",
-      "imagenUrl": "https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?auto=format&fit=crop&w=800&q=80",
-      "fecha": "2026-07-26",
-      "categoria": "Accessori Tech",
-      "autor": "GoSmArtic Team"
     }
   ],
   "_last_updated": "2026-07-26T00:00:00.000Z"
