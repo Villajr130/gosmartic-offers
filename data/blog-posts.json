@@ -122,8 +122,8 @@
       "autor": "GoSmArtic Team"
     },
     {
-      "id": 999,
-      "slug": "test-onesignal-fix-v2",
+      "id": 1000,
+      "slug": "test-onesignal-segment-fix",
       "titulo": "Articolo di prova per test OneSignal",
       "resumen": "Articolo di prova per verificare l'invio push OneSignal dopo la correzione dell'endpoint e dell'autenticazione.",
       "contenido_html": "<p>Articolo di prova.</p>",
