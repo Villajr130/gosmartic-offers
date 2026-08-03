@@ -50,7 +50,7 @@ jobs:
           curl -s -X POST https://api.onesignal.com/notifications \
             -H "Authorization: Key ${{ secrets.ONESIGNAL_REST_API_KEY }}" \
             -H "Content-Type: application/json" \
-            -d "{\"target_channel\":\"push\",\"app_id\":\"${{ secrets.ONESIGNAL_APP_ID }}\",\"included_segments\":[\"Total Subscriptions\"],\"headings\":{\"en\":\"Nuovo articolo su GoSmArtic\",\"it\":\"Nuovo articolo su GoSmArtic\"},\"contents\":{\"en\":\"$TITLE\",\"it\":\"$TITLE\"},\"url\":\"https://gosmartic.com/#blog/$SLUG\"}"
+            -d "{\"target_channel\":\"push\",\"app_id\":\"${{ secrets.ONESIGNAL_APP_ID }}\",\"included_segments\":[\"Total Subscriptions\"],\"headings\":{\"en\":\"Nuovo articolo su GoSmArtic\",\"it\":\"Nuovo articolo su GoSmArtic\"},\"contents\":{\"en\":\"$TITLE\",\"it\":\"$TITLE\"},\"url\":\"https://gosmartic.com/blog/$SLUG/\"}"
       - name: Purge jsDelivr cache
         run: |
           curl -s "https://purge.jsdelivr.net/gh/Villajr130/gosmartic-offers@main/data/blog-posts.json"
