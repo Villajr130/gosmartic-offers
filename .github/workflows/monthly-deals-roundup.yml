@@ -1,0 +1,53 @@
+name: Monthly Deals Roundup (Draft)
+on:
+  schedule:
+    - cron: '0 8 20 * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  generate-draft:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Generate draft roundup
+        run: node scripts/generate-deals-roundup.js
+      - name: Commit draft to a review branch
+        id: commit
+        run: |
+          BRANCH="deals-roundup/$(date +%Y-%m)"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add drafts/
+          if git diff --staged --quiet; then
+            echo "Nessuna bozza generata (nessuna offerta valida questo mese), niente da committare."
+            echo "has_draft=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git checkout -b "$BRANCH"
+          git commit -m "chore: bozza offerte del mese $(date +%Y-%m)"
+          git push -u origin "$BRANCH"
+          echo "branch=$BRANCH" >> "$GITHUB_OUTPUT"
+          echo "has_draft=true" >> "$GITHUB_OUTPUT"
+      - name: Open pull request for review
+        if: steps.commit.outputs.has_draft == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh pr create \
+            --title "Bozza: offerte del mese $(date +%Y-%m)" \
+            --base main \
+            --head "${{ steps.commit.outputs.branch }}" \
+            --body "Bozza generata automaticamente dal workflow **Monthly Deals Roundup**.
+
+Questa PR **non pubblica nulla**: il post si trova in \`drafts/\` e non in \`data/blog-posts.json\`, quindi non viene notificato né pubblicato sul sito mergiando questa PR così com'è.
+
+Prima di pubblicare:
+1. Rivedi il file in \`drafts/\` di questa PR e completa i campi \`[DA COMPLETARE]\` (introduzione, descrizioni prodotto, meta description, immagine).
+2. Scegli un \`id\` definitivo per il post (quello nel file è solo un suggerimento).
+3. Sposta l'oggetto \`post\` dentro l'array \`posts\` di \`data/blog-posts.json\` su un branch/PR separata.
+4. Solo il merge su \`main\` di \`data/blog-posts.json\` pubblica il post e attiva le notifiche."
