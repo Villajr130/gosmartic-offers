@@ -75,7 +75,8 @@
       "imagenUrl": "https://images.unsplash.com/photo-1611746872915-64382b5c76da?auto=format&fit=crop&w=800&q=80",
       "fecha": "2026-07-13",
       "categoria": "Accessori Tech",
-      "autor": "GoSmArtic Team"
+      "autor": "GoSmArtic Team",
+      "noindex": true
     },
     {
       "id": 8,
