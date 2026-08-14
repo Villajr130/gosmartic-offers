@@ -3,223 +3,223 @@
     "is_on_sale": true,
     "discount_percentage": 20,
     "image_url": "https://m.media-amazon.com/images/I/71I5wT8ZNqL._AC_SL1500_.jpg",
-    "last_checked_at": "2026-08-13T07:51:08.987Z"
+    "last_checked_at": "2026-08-14T07:48:28.884Z"
   },
   "2": {
     "is_on_sale": true,
     "discount_percentage": 16,
     "image_url": "https://m.media-amazon.com/images/I/61LNOAooJHL._AC_SL1500_.jpg",
-    "last_checked_at": "2026-08-13T07:51:19.615Z"
+    "last_checked_at": "2026-08-14T07:48:40.971Z"
   },
   "3": {
     "is_on_sale": true,
     "discount_percentage": 7,
     "image_url": "https://m.media-amazon.com/images/I/617b0iQyo9L._AC_SL1500_.jpg",
-    "last_checked_at": "2026-08-13T07:51:32.260Z"
+    "last_checked_at": "2026-08-14T07:48:52.300Z"
   },
   "4": {
     "is_on_sale": true,
     "discount_percentage": 8,
     "image_url": "https://m.media-amazon.com/images/I/61X5FknDWuL._AC_SL1500_.jpg",
-    "last_checked_at": "2026-08-13T07:51:44.322Z"
+    "last_checked_at": "2026-08-14T07:49:04.478Z"
   },
   "5": {
     "is_on_sale": true,
     "discount_percentage": 8,
     "image_url": "https://m.media-amazon.com/images/I/61j5RD1d9KL._AC_SL1500_.jpg",
-    "last_checked_at": "2026-08-13T07:51:56.515Z"
+    "last_checked_at": "2026-08-14T07:49:16.733Z"
   },
   "6": {
     "is_on_sale": false,
     "discount_percentage": 0,
     "image_url": "https://m.media-amazon.com/images/I/51Qrdm38wxL._AC_SL1500_.jpg",
-    "last_checked_at": "2026-08-13T07:52:07.012Z"
+    "last_checked_at": "2026-08-14T07:49:28.545Z"
   },
   "7": {
-    "is_on_sale": true,
-    "discount_percentage": 27,
+    "is_on_sale": false,
+    "discount_percentage": 0,
     "image_url": "https://m.media-amazon.com/images/I/61pQDSF0FXL._AC_SL1500_.jpg",
-    "last_checked_at": "2026-08-13T07:52:18.441Z"
+    "last_checked_at": "2026-08-14T07:49:49.292Z"
   },
   "9": {
     "is_on_sale": false,
     "discount_percentage": 0,
     "image_url": "https://m.media-amazon.com/images/I/61wUVb6aSNL._AC_SL1500_.jpg",
-    "last_checked_at": "2026-08-13T07:52:28.010Z"
+    "last_checked_at": "2026-08-14T07:50:04.428Z"
   },
   "11": {
     "is_on_sale": false,
     "discount_percentage": 0,
     "image_url": "https://m.media-amazon.com/images/I/516cLeBeX3L._AC_SL1005_.jpg",
-    "last_checked_at": "2026-08-13T07:52:39.451Z"
+    "last_checked_at": "2026-08-14T07:50:18.405Z"
   },
   "12": {
     "is_on_sale": false,
     "discount_percentage": 0,
     "image_url": "https://m.media-amazon.com/images/I/81c21Aj52CL._AC_SL1500_.jpg",
-    "last_checked_at": "2026-08-13T07:52:49.589Z"
+    "last_checked_at": "2026-08-14T07:50:29.061Z"
   },
   "13": {
     "is_on_sale": false,
     "discount_percentage": 0,
     "image_url": "https://m.media-amazon.com/images/I/81LwDsO0MTL._AC_SL1500_.jpg",
-    "last_checked_at": "2026-08-12T07:52:34.359Z"
+    "last_checked_at": "2026-08-14T07:50:41.317Z"
   },
   "14": {
     "is_on_sale": false,
     "discount_percentage": 0,
     "image_url": "https://m.media-amazon.com/images/I/611GH28hp8L._AC_SL1500_.jpg",
-    "last_checked_at": "2026-08-12T07:52:43.986Z"
+    "last_checked_at": "2026-08-14T07:50:51.183Z"
   },
   "16": {
-    "is_on_sale": true,
-    "discount_percentage": 25,
+    "is_on_sale": false,
+    "discount_percentage": 0,
     "image_url": "https://m.media-amazon.com/images/I/81yNeYTSv1L._AC_SL1500_.jpg",
-    "last_checked_at": "2026-08-12T07:52:55.465Z"
+    "last_checked_at": "2026-08-14T07:51:02.852Z"
   },
   "17": {
     "is_on_sale": false,
     "discount_percentage": 0,
     "image_url": "https://m.media-amazon.com/images/I/81PqyONUV2L._AC_SL1500_.jpg",
-    "last_checked_at": "2026-08-12T07:53:04.564Z"
+    "last_checked_at": "2026-08-14T07:51:15.378Z"
   },
   "18": {
     "is_on_sale": false,
     "discount_percentage": 0,
     "image_url": "https://m.media-amazon.com/images/I/71KwnGUUFOL._AC_SL1500_.jpg",
-    "last_checked_at": "2026-08-12T07:53:15.084Z"
+    "last_checked_at": "2026-08-14T07:51:24.991Z"
   },
   "20": {
     "is_on_sale": false,
     "discount_percentage": 0,
     "image_url": "https://m.media-amazon.com/images/I/71lsXIgJXcL._AC_SL1500_.jpg",
-    "last_checked_at": "2026-08-12T07:53:25.887Z"
+    "last_checked_at": "2026-08-14T07:51:34.946Z"
   },
   "21": {
     "is_on_sale": false,
     "discount_percentage": 0,
     "image_url": "https://m.media-amazon.com/images/I/71APX2UPTVL._AC_SL1500_.jpg",
-    "last_checked_at": "2026-08-12T07:53:47.894Z"
+    "last_checked_at": "2026-08-14T07:51:45.811Z"
   },
   "22": {
     "is_on_sale": false,
     "discount_percentage": 0,
     "image_url": "https://m.media-amazon.com/images/I/71Noa8MXutL._AC_SL1500_.jpg",
-    "last_checked_at": "2026-08-12T07:53:56.356Z"
+    "last_checked_at": "2026-08-14T07:51:54.817Z"
   },
   "23": {
     "is_on_sale": false,
     "discount_percentage": 0,
     "image_url": "https://m.media-amazon.com/images/I/71B1MUY+CJL._AC_SL1500_.jpg",
-    "last_checked_at": "2026-08-12T07:54:08.392Z"
+    "last_checked_at": "2026-08-14T07:52:05.987Z"
   },
   "24": {
     "is_on_sale": false,
     "discount_percentage": 0,
     "image_url": "https://m.media-amazon.com/images/I/71e5pPKFohL._AC_SL1500_.jpg",
-    "last_checked_at": "2026-08-12T07:54:20.064Z"
+    "last_checked_at": "2026-08-14T07:52:17.032Z"
   },
   "25": {
     "is_on_sale": false,
     "discount_percentage": 0,
     "image_url": "https://m.media-amazon.com/images/I/61hny35fAgL._AC_SL1500_.jpg",
-    "last_checked_at": "2026-08-12T07:54:28.111Z"
+    "last_checked_at": "2026-08-14T07:52:27.053Z"
   },
   "26": {
     "is_on_sale": false,
     "discount_percentage": 0,
     "image_url": "https://m.media-amazon.com/images/I/61GTTAZbKRL._AC_SL1500_.jpg",
-    "last_checked_at": "2026-08-12T07:54:43.931Z"
+    "last_checked_at": "2026-08-14T07:52:34.636Z"
   },
   "29": {
     "is_on_sale": false,
     "discount_percentage": 0,
     "image_url": "https://m.media-amazon.com/images/I/71GaGnpTsRL._AC_SL1500_.jpg",
-    "last_checked_at": "2026-08-12T07:54:53.235Z"
+    "last_checked_at": "2026-08-14T07:52:43.484Z"
   },
   "30": {
     "is_on_sale": true,
     "discount_percentage": 6,
     "image_url": "https://m.media-amazon.com/images/I/719jiwiE6SL._AC_SL1500_.jpg",
-    "last_checked_at": "2026-08-12T07:55:02.290Z"
+    "last_checked_at": "2026-08-14T07:52:53.719Z"
   },
   "31": {
     "is_on_sale": true,
     "discount_percentage": 20,
     "image_url": "https://m.media-amazon.com/images/I/61VHVpa4wvL._AC_SL1500_.jpg",
-    "last_checked_at": "2026-08-12T07:55:15.618Z"
+    "last_checked_at": "2026-08-14T07:53:07.326Z"
   },
   "32": {
     "is_on_sale": true,
     "discount_percentage": 22,
     "image_url": "https://m.media-amazon.com/images/I/618GW-ehp+L._AC_SL1500_.jpg",
-    "last_checked_at": "2026-08-12T07:55:29.171Z"
+    "last_checked_at": "2026-08-14T07:53:23.258Z"
   },
   "33": {
     "is_on_sale": true,
     "discount_percentage": 17,
     "image_url": "https://m.media-amazon.com/images/I/7145wS7q7hL._AC_SL1500_.jpg",
-    "last_checked_at": "2026-08-12T07:55:40.194Z"
+    "last_checked_at": "2026-08-14T07:53:33.603Z"
   },
   "34": {
-    "is_on_sale": true,
-    "discount_percentage": 5,
+    "is_on_sale": false,
+    "discount_percentage": 0,
     "image_url": "https://m.media-amazon.com/images/I/619U0gfndwL._AC_SL1500_.jpg",
-    "last_checked_at": "2026-08-12T07:55:54.585Z"
+    "last_checked_at": "2026-08-14T07:53:43.892Z"
   },
   "35": {
     "is_on_sale": true,
     "discount_percentage": 22,
     "image_url": "https://m.media-amazon.com/images/I/81gGWQq2A7L._AC_SL1500_.jpg",
-    "last_checked_at": "2026-08-12T07:56:05.081Z"
+    "last_checked_at": "2026-08-14T07:53:59.764Z"
   },
   "36": {
     "is_on_sale": false,
     "discount_percentage": 0,
     "image_url": "https://m.media-amazon.com/images/I/61HGj2xo6CL._AC_SL1000_.jpg",
-    "last_checked_at": "2026-08-12T07:56:14.601Z"
+    "last_checked_at": "2026-08-14T07:54:12.877Z"
   },
   "37": {
     "is_on_sale": true,
     "discount_percentage": 32,
     "image_url": "https://m.media-amazon.com/images/I/61+2Wr079NL._AC_SL1500_.jpg",
-    "last_checked_at": "2026-08-12T07:56:24.821Z"
+    "last_checked_at": "2026-08-14T07:54:24.591Z"
   },
   "38": {
     "is_on_sale": true,
     "discount_percentage": 26,
     "image_url": "https://m.media-amazon.com/images/I/61ElWawpsLL._AC_SL1500_.jpg",
-    "last_checked_at": "2026-08-12T07:56:36.994Z"
+    "last_checked_at": "2026-08-14T07:54:35.614Z"
   },
   "39": {
     "is_on_sale": false,
     "discount_percentage": 0,
     "image_url": "https://m.media-amazon.com/images/I/51ZNOBaCNwS._AC_SL1200_.jpg",
-    "last_checked_at": "2026-08-12T07:56:47.063Z"
+    "last_checked_at": "2026-08-14T07:54:44.007Z"
   },
   "40": {
     "is_on_sale": false,
     "discount_percentage": 0,
     "image_url": "https://m.media-amazon.com/images/I/51ZwCSY1lhL._AC_SL1470_.jpg",
-    "last_checked_at": "2026-08-12T07:56:56.844Z"
+    "last_checked_at": "2026-08-14T07:54:52.867Z"
   },
   "41": {
     "is_on_sale": true,
     "discount_percentage": 25,
     "image_url": "https://m.media-amazon.com/images/I/61M5mkvTeTL._AC_SL1500_.jpg",
-    "last_checked_at": "2026-08-12T07:57:08.114Z"
+    "last_checked_at": "2026-08-14T07:55:07.425Z"
   },
   "42": {
     "is_on_sale": false,
     "discount_percentage": 0,
     "image_url": "https://m.media-amazon.com/images/I/61ClqppBT8L._AC_SL1500_.jpg",
-    "last_checked_at": "2026-08-12T07:57:17.338Z"
+    "last_checked_at": "2026-08-14T07:55:16.304Z"
   },
   "43": {
     "is_on_sale": true,
     "discount_percentage": 41,
     "image_url": "https://m.media-amazon.com/images/I/61T85CGI4ZL._AC_SL1500_.jpg",
-    "last_checked_at": "2026-08-12T07:57:28.661Z"
+    "last_checked_at": "2026-08-14T07:55:27.540Z"
   },
-  "_last_updated": "2026-08-13T07:52:51.852Z"
+  "_last_updated": "2026-08-14T07:55:28.340Z"
 }
