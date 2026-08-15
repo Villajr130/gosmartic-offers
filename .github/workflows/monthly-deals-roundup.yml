@@ -44,10 +44,10 @@ jobs:
             --head "${{ steps.commit.outputs.branch }}" \
             --body "Bozza generata automaticamente dal workflow **Monthly Deals Roundup**.
 
-Questa PR **non pubblica nulla**: il post si trova in \`drafts/\` e non in \`data/blog-posts.json\`, quindi non viene notificato né pubblicato sul sito mergiando questa PR così com'è.
+          Questa PR **non pubblica nulla**: il post si trova in \`drafts/\` e non in \`data/blog-posts.json\`, quindi non viene notificato né pubblicato sul sito mergiando questa PR così com'è.
 
-Prima di pubblicare:
-1. Rivedi il file in \`drafts/\` di questa PR e completa i campi \`[DA COMPLETARE]\` (introduzione, descrizioni prodotto, meta description, immagine).
-2. Scegli un \`id\` definitivo per il post (quello nel file è solo un suggerimento).
-3. Sposta l'oggetto \`post\` dentro l'array \`posts\` di \`data/blog-posts.json\` su un branch/PR separata.
-4. Solo il merge su \`main\` di \`data/blog-posts.json\` pubblica il post e attiva le notifiche."
+          Prima di pubblicare:
+          1. Rivedi il file in \`drafts/\` di questa PR e completa i campi \`[DA COMPLETARE]\` (introduzione, descrizioni prodotto, meta description, immagine).
+          2. Scegli un \`id\` definitivo per il post (quello nel file è solo un suggerimento).
+          3. Sposta l'oggetto \`post\` dentro l'array \`posts\` di \`data/blog-posts.json\` su un branch/PR separata.
+          4. Solo il merge su \`main\` di \`data/blog-posts.json\` pubblica il post e attiva le notifiche."
