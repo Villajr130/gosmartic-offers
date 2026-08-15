@@ -60,10 +60,6 @@ function extractDiscountPct(data) {
   return 0;
 }
 
-// DEBITO TECNICO: le immagini vengono lette da qui (SerpApi) ma non da gosmartic-web/app.js,
-// che mantiene ancora i suoi imagenUrl a mano. Stesso tipo di disallineamento potenziale di
-// nombre/categoria in data/catalogo.json (vedi commento in generate-deals-roundup.js) — in
-// entrambi i casi il dato "vero" vive duplicato in due repo invece che in un'unica fonte.
 function extractImage(product) {
   if (Array.isArray(product?.thumbnails) && product.thumbnails.length > 0) {
     return product.thumbnails[0];
