@@ -42,7 +42,8 @@ function getOffersInSconto(catalogo, offers) {
         asin: item.asin,
         nombre: item.nombre || `Prodotto #${item.id}`,
         categoria: item.categoria || 'Accessori Tech',
-        discount_percentage: offer.discount_percentage
+        discount_percentage: offer.discount_percentage,
+        image_url: offer.image_url
       };
     })
     .filter(Boolean)
@@ -64,7 +65,12 @@ function groupByCategoria(items) {
 
 function buildProductBlock(item) {
   const link = `https://www.amazon.it/dp/${item.asin}?tag=gosmartic-21`;
-  return `<p><strong>${item.nombre}</strong> — sconto del ${item.discount_percentage}%. `
+  const imageBlock = item.image_url
+    ? `<div class="w-full max-w-sm mx-auto h-64 bg-gray-50 rounded-xl mb-4 flex items-center justify-center overflow-hidden">
+  <img src="${item.image_url}" alt="${item.nombre}" class="max-w-full max-h-full object-contain">
+</div>`
+    : '';
+  return `${imageBlock}<p><strong>${item.nombre}</strong> — sconto del ${item.discount_percentage}%. `
     + `[DA COMPLETARE: breve descrizione del prodotto e perché conviene] `
     + `Il <a href="${link}" target="_blank" rel="noopener noreferrer sponsored">${item.nombre}</a> è disponibile su Amazon.</p>`;
 }
