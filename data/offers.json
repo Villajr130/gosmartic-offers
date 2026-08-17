@@ -221,5 +221,23 @@
     "image_url": "https://m.media-amazon.com/images/I/61T85CGI4ZL._AC_SL1500_.jpg",
     "last_checked_at": "2026-08-17T11:16:12.150Z"
   },
-  "_last_updated": "2026-08-17T11:16:12.951Z"
+  "44": {
+    "is_on_sale": true,
+    "discount_percentage": 10,
+    "image_url": "https://m.media-amazon.com/images/I/611xXRaWhPL._AC_SL1500_.jpg",
+    "last_checked_at": "2026-08-17T18:57:55.000Z"
+  },
+  "45": {
+    "is_on_sale": false,
+    "discount_percentage": 0,
+    "image_url": "https://m.media-amazon.com/images/I/61aknatMqRL._AC_SL1500_.jpg",
+    "last_checked_at": "2026-08-17T19:45:00.000Z"
+  },
+  "46": {
+    "is_on_sale": true,
+    "discount_percentage": 25,
+    "image_url": "https://m.media-amazon.com/images/I/51sO7lYtkHL._AC_SL1080_.jpg",
+    "last_checked_at": "2026-08-17T18:57:55.000Z"
+  },
+  "_last_updated": "2026-08-17T18:57:55.000Z"
 }

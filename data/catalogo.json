@@ -35,5 +35,8 @@
   { "id": 40, "asin": "B089ZPJXWZ", "nombre": "Caricatore Wireless AGPTEK 15W", "categoria": "Accessori Tech" },
   { "id": 41, "asin": "B099K9PS7W", "nombre": "Cavo USB-C UGREEN 100W", "categoria": "Accessori Tech" },
   { "id": 42, "asin": "B01HTH8F3K", "nombre": "Anker Soundcore Mini Speaker Bluetooth", "categoria": "Accessori Tech" },
-  { "id": 43, "asin": "B00DQGBYDC", "nombre": "Chiavetta USB SanDisk Ultra 64GB", "categoria": "Accessori Tech" }
+  { "id": 43, "asin": "B00DQGBYDC", "nombre": "Chiavetta USB SanDisk Ultra 64GB", "categoria": "Accessori Tech" },
+  { "id": 44, "asin": "B0D841ZJM1", "nombre": "Lenovo IdeaPad Slim 3 14IAN8", "categoria": "PC & Laptop" },
+  { "id": 45, "asin": "B0GN39K89H", "nombre": "ASUS Vivobook Go 15 E1504FA", "categoria": "PC & Laptop" },
+  { "id": 46, "asin": "B0GQTHW81N", "nombre": "Lenovo IdeaPad Slim 3 15\" IPS", "categoria": "PC & Laptop" }
 ]
