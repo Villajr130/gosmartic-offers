@@ -3,169 +3,169 @@
     "is_on_sale": true,
     "discount_percentage": 18,
     "image_url": null,
-    "last_checked_at": "2026-08-25T07:06:54.517Z"
+    "last_checked_at": "2026-08-26T07:07:08.226Z"
   },
   "2": {
     "is_on_sale": true,
     "discount_percentage": 29,
     "image_url": null,
-    "last_checked_at": "2026-08-25T07:07:03.922Z"
+    "last_checked_at": "2026-08-26T07:07:20.958Z"
   },
   "3": {
     "is_on_sale": true,
     "discount_percentage": 13,
     "image_url": null,
-    "last_checked_at": "2026-08-25T07:07:15.824Z"
+    "last_checked_at": "2026-08-26T07:07:32.870Z"
   },
   "4": {
     "is_on_sale": true,
     "discount_percentage": 8,
     "image_url": null,
-    "last_checked_at": "2026-08-25T07:07:24.570Z"
+    "last_checked_at": "2026-08-26T07:07:46.273Z"
   },
   "5": {
     "is_on_sale": true,
     "discount_percentage": 8,
     "image_url": null,
-    "last_checked_at": "2026-08-25T07:07:37.029Z"
+    "last_checked_at": "2026-08-26T07:07:58.752Z"
   },
   "6": {
     "is_on_sale": false,
     "discount_percentage": 0,
     "image_url": null,
-    "last_checked_at": "2026-08-25T07:07:46.780Z"
+    "last_checked_at": "2026-08-26T07:08:14.165Z"
   },
   "7": {
     "is_on_sale": false,
     "discount_percentage": 0,
     "image_url": null,
-    "last_checked_at": "2026-08-25T07:07:57.301Z"
+    "last_checked_at": "2026-08-26T07:08:23.948Z"
   },
   "9": {
     "is_on_sale": false,
     "discount_percentage": 0,
     "image_url": null,
-    "last_checked_at": "2026-08-25T07:08:10.946Z"
+    "last_checked_at": "2026-08-26T07:08:36.266Z"
   },
   "11": {
     "is_on_sale": false,
     "discount_percentage": 0,
     "image_url": null,
-    "last_checked_at": "2026-08-25T07:08:24.193Z"
+    "last_checked_at": "2026-08-26T07:08:43.141Z"
   },
   "12": {
     "is_on_sale": false,
     "discount_percentage": 0,
     "image_url": null,
-    "last_checked_at": "2026-08-25T07:08:32.892Z"
+    "last_checked_at": "2026-08-26T07:08:52.691Z"
   },
   "13": {
     "is_on_sale": false,
     "discount_percentage": 0,
     "image_url": null,
-    "last_checked_at": "2026-08-25T07:08:43.501Z"
+    "last_checked_at": "2026-08-26T07:09:11.102Z"
   },
   "14": {
     "is_on_sale": false,
     "discount_percentage": 0,
     "image_url": null,
-    "last_checked_at": "2026-08-25T07:08:52.889Z"
+    "last_checked_at": "2026-08-26T07:09:20.331Z"
   },
   "16": {
-    "is_on_sale": false,
-    "discount_percentage": 0,
+    "is_on_sale": true,
+    "discount_percentage": 4,
     "image_url": null,
-    "last_checked_at": "2026-08-25T07:09:02.947Z"
+    "last_checked_at": "2026-08-26T07:09:33.409Z"
   },
   "17": {
     "is_on_sale": false,
     "discount_percentage": 0,
     "image_url": null,
-    "last_checked_at": "2026-08-25T07:09:12.759Z"
+    "last_checked_at": "2026-08-26T07:09:46.155Z"
   },
   "18": {
     "is_on_sale": false,
     "discount_percentage": 0,
     "image_url": null,
-    "last_checked_at": "2026-08-25T07:09:23.997Z"
+    "last_checked_at": "2026-08-26T07:09:55.449Z"
   },
   "20": {
     "is_on_sale": false,
     "discount_percentage": 0,
     "image_url": null,
-    "last_checked_at": "2026-08-25T07:09:37.647Z"
+    "last_checked_at": "2026-08-26T07:10:06.496Z"
   },
   "21": {
     "is_on_sale": true,
     "discount_percentage": 3,
     "image_url": null,
-    "last_checked_at": "2026-08-25T07:09:47.864Z"
+    "last_checked_at": "2026-08-26T07:10:18.102Z"
   },
   "22": {
     "is_on_sale": false,
     "discount_percentage": 0,
     "image_url": null,
-    "last_checked_at": "2026-08-25T07:10:00.328Z"
+    "last_checked_at": "2026-08-26T07:10:32.827Z"
   },
   "23": {
     "is_on_sale": false,
     "discount_percentage": 0,
     "image_url": null,
-    "last_checked_at": "2026-08-25T07:10:14.312Z"
+    "last_checked_at": "2026-08-26T07:10:44.430Z"
   },
   "24": {
     "is_on_sale": false,
     "discount_percentage": 0,
     "image_url": null,
-    "last_checked_at": "2026-08-25T07:10:25.813Z"
+    "last_checked_at": "2026-08-26T07:10:52.749Z"
   },
   "25": {
     "is_on_sale": false,
     "discount_percentage": 0,
     "image_url": null,
-    "last_checked_at": "2026-08-25T07:10:41.134Z"
+    "last_checked_at": "2026-08-26T07:11:03.373Z"
   },
   "26": {
     "is_on_sale": false,
     "discount_percentage": 0,
     "image_url": null,
-    "last_checked_at": "2026-08-25T07:10:48.828Z"
+    "last_checked_at": "2026-08-26T07:11:11.851Z"
   },
   "29": {
     "is_on_sale": false,
     "discount_percentage": 0,
     "image_url": null,
-    "last_checked_at": "2026-08-25T07:10:59.102Z"
+    "last_checked_at": "2026-08-26T07:11:22.210Z"
   },
   "30": {
     "is_on_sale": true,
     "discount_percentage": 6,
     "image_url": null,
-    "last_checked_at": "2026-08-25T07:11:08.360Z"
+    "last_checked_at": "2026-08-26T07:11:32.293Z"
   },
   "31": {
     "is_on_sale": true,
     "discount_percentage": 20,
     "image_url": null,
-    "last_checked_at": "2026-08-25T07:11:22.571Z"
+    "last_checked_at": "2026-08-26T07:11:46.484Z"
   },
   "32": {
     "is_on_sale": true,
     "discount_percentage": 22,
     "image_url": null,
-    "last_checked_at": "2026-08-25T07:11:32.390Z"
+    "last_checked_at": "2026-08-26T07:11:57.684Z"
   },
   "33": {
     "is_on_sale": true,
     "discount_percentage": 17,
     "image_url": null,
-    "last_checked_at": "2026-08-25T07:11:42.295Z"
+    "last_checked_at": "2026-08-26T07:12:08.120Z"
   },
   "34": {
     "is_on_sale": false,
     "discount_percentage": 0,
     "image_url": null,
-    "last_checked_at": "2026-08-25T07:11:51.008Z"
+    "last_checked_at": "2026-08-26T07:12:19.632Z"
   },
   "35": {
     "is_on_sale": true,
@@ -177,67 +177,67 @@
     "is_on_sale": false,
     "discount_percentage": 0,
     "image_url": null,
-    "last_checked_at": "2026-08-25T07:12:03.229Z"
+    "last_checked_at": "2026-08-26T07:12:33.269Z"
   },
   "37": {
     "is_on_sale": true,
     "discount_percentage": 32,
     "image_url": null,
-    "last_checked_at": "2026-08-25T07:12:12.372Z"
+    "last_checked_at": "2026-08-26T07:12:41.601Z"
   },
   "38": {
     "is_on_sale": true,
     "discount_percentage": 22,
     "image_url": null,
-    "last_checked_at": "2026-08-25T07:12:23.212Z"
+    "last_checked_at": "2026-08-26T07:12:57.439Z"
   },
   "39": {
     "is_on_sale": false,
     "discount_percentage": 0,
     "image_url": null,
-    "last_checked_at": "2026-08-25T07:12:41.130Z"
+    "last_checked_at": "2026-08-26T07:13:05.663Z"
   },
   "40": {
     "is_on_sale": false,
     "discount_percentage": 0,
     "image_url": null,
-    "last_checked_at": "2026-08-25T07:12:56.984Z"
+    "last_checked_at": "2026-08-26T07:13:13.060Z"
   },
   "41": {
     "is_on_sale": true,
     "discount_percentage": 10,
     "image_url": null,
-    "last_checked_at": "2026-08-25T07:13:06.563Z"
+    "last_checked_at": "2026-08-26T07:13:25.042Z"
   },
   "42": {
     "is_on_sale": false,
     "discount_percentage": 0,
     "image_url": null,
-    "last_checked_at": "2026-08-25T07:13:14.793Z"
+    "last_checked_at": "2026-08-26T07:13:35.014Z"
   },
   "43": {
     "is_on_sale": true,
     "discount_percentage": 41,
     "image_url": null,
-    "last_checked_at": "2026-08-25T07:13:24.767Z"
+    "last_checked_at": "2026-08-26T07:13:45.397Z"
   },
   "44": {
     "is_on_sale": false,
     "discount_percentage": 0,
     "image_url": null,
-    "last_checked_at": "2026-08-25T07:13:33.074Z"
+    "last_checked_at": "2026-08-26T07:13:54.770Z"
   },
   "45": {
     "is_on_sale": true,
     "discount_percentage": 6,
     "image_url": null,
-    "last_checked_at": "2026-08-25T07:13:43.615Z"
+    "last_checked_at": "2026-08-26T07:14:04.849Z"
   },
   "46": {
-    "is_on_sale": true,
-    "discount_percentage": 20,
+    "is_on_sale": false,
+    "discount_percentage": 0,
     "image_url": null,
-    "last_checked_at": "2026-08-25T07:13:53.066Z"
+    "last_checked_at": "2026-08-26T07:14:15.492Z"
   },
-  "_last_updated": "2026-08-25T07:13:53.866Z"
+  "_last_updated": "2026-08-26T07:14:16.292Z"
 }
