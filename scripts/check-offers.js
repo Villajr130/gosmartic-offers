@@ -61,6 +61,9 @@ function extractDiscountPct(data) {
 }
 
 function extractImage(product) {
+  if (typeof product?.thumbnail === 'string' && product.thumbnail.length > 0) {
+    return product.thumbnail;
+  }
   if (Array.isArray(product?.thumbnails) && product.thumbnails.length > 0) {
     return product.thumbnails[0];
   }
@@ -86,6 +89,10 @@ async function main() {
 
       const discountPct = extractDiscountPct(data);
       const imageUrl = extractImage(product);
+
+      if (!imageUrl) {
+        console.warn(`ID ${item.id} (${item.asin}): product_results presente pero sin thumbnail/thumbnails válido — posible cambio de esquema en SerpApi`);
+      }
 
       let isOnSale = false;
       let estado = 'sin oferta';
