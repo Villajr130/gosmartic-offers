@@ -27,7 +27,7 @@
   { "id": 32, "asin": "B0F2TT8Q7M", "nombre": "Sony WH-1000XM6 Wireless Cuffie", "categoria": "Accessori Tech" },
   { "id": 33, "asin": "B0DFLGW8MF", "nombre": "INIU Power Bank 10000mAh", "categoria": "Accessori Tech" },
   { "id": 34, "asin": "B0CZ9LH53B", "nombre": "Anker Power Bank 20000mAh 30W", "categoria": "Accessori Tech" },
-  { "id": 35, "asin": "B0DXKMD2NH", "nombre": "JBL Charge 6 Speaker Bluetooth", "categoria": "Accessori Tech" },
+  { "id": 35, "asin": "B0CZ7DY692", "nombre": "Soundcore Boom 2 Plus Speaker Bluetooth", "categoria": "Accessori Tech" },
   { "id": 36, "asin": "B09WX9XBKD", "nombre": "Amazon Echo Pop", "categoria": "Accessori Tech" },
   { "id": 37, "asin": "B0C3HCD34R", "nombre": "Soundcore by Anker Q20i", "categoria": "Accessori Tech" },
   { "id": 38, "asin": "B0DK5FTVPK", "nombre": "Anker Caricatore USB C 140W GaN", "categoria": "Accessori Tech" },
@@ -35,5 +35,8 @@
   { "id": 40, "asin": "B089ZPJXWZ", "nombre": "Caricatore Wireless AGPTEK 15W", "categoria": "Accessori Tech" },
   { "id": 41, "asin": "B099K9PS7W", "nombre": "Cavo USB-C UGREEN 100W", "categoria": "Accessori Tech" },
   { "id": 42, "asin": "B01HTH8F3K", "nombre": "Anker Soundcore Mini Speaker Bluetooth", "categoria": "Accessori Tech" },
-  { "id": 43, "asin": "B00DQGBYDC", "nombre": "Chiavetta USB SanDisk Ultra 64GB", "categoria": "Accessori Tech" }
+  { "id": 43, "asin": "B00DQGBYDC", "nombre": "Chiavetta USB SanDisk Ultra 64GB", "categoria": "Accessori Tech" },
+  { "id": 44, "asin": "B0D841ZJM1", "nombre": "Lenovo IdeaPad Slim 3 14IAN8", "categoria": "PC & Laptop" },
+  { "id": 45, "asin": "B0GN39K89H", "nombre": "ASUS Vivobook Go 15 E1504FA", "categoria": "PC & Laptop" },
+  { "id": 46, "asin": "B0GQTHW81N", "nombre": "Lenovo IdeaPad Slim 3 15\" IPS", "categoria": "PC & Laptop" }
 ]
